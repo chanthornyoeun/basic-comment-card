@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Card</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="comment">
+            <div class="header">
+                <img class="avatar" src="images/avatar.jpg" alt="">
+                <div class="title">
+                    <span class="name">John Due</span>
+                    <span class="date" id="date"></span>
+                </div>
+            </div>
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis obcaecati laborum aperiam molestiae maxime rerum, dolorem accusantium, animi minima laudantium officiis? Dolorem sed fugit, distinctio possimus ipsam culpa error velit?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis cupiditate blanditiis exercitationem neque vero porro distinctio, incidunt aspernatur non id quaerat omnis dolorum, itaque eos voluptate. Non voluptate corporis iste.
+                </p>
+            </div>
+            <div class="footer">
+                <div class="left-side">
+                    <i class="fa fa-thumbs-o-up icon">
+                        <span>Like</span>
+                    </i>
+                    <i class="fa fa-comment icon">
+                        <span>Reply</span>
+                    </i>
+                </div>
+                <i class="fa fa-share icon">
+                    <span>Share</span>
+                </i>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/84e819218f.js" crossorigin="anonymous"></script>
+    <script>
+        const spanEl = document.getElementById('date');
+        spanEl.textContent = new Date().toDateString();
+    </script>
+</body>
+</html>
